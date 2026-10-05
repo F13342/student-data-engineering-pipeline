@@ -62,7 +62,7 @@ def validate_and_split(rows):
 
 
 def validate_source_record(row, source):
-    if source == "CSV":
+    if source in {"CSV", "Web Scraping"}:
         required = ["student_id", "student_name", "age", "major", "city"]
     elif source == "API":
         required = ["student_id", "gpa", "attendance", "score"]
@@ -75,7 +75,7 @@ def validate_source_record(row, source):
         if row.get(field) in (None, ""):
             return f"missing {field}"
 
-    if source in {"CSV", "API"}:
+    if source in {"CSV", "API", "Web Scraping"}:
         try:
             if source == "CSV" and not 16 <= int(row["age"]) <= 80:
                 return "invalid age: must be 16-80"

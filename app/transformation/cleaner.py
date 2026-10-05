@@ -33,3 +33,6 @@ def clean_mongodb_row(row):
         cleaned[key] = clean_text(cleaned.get(key))
 
     return cleaned
+
+def clean_web_row(row):
+    return clean_student_row(row)
