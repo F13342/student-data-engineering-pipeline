@@ -1,12 +1,11 @@
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
-
 DATA = [
-    {"student_id": "S001", "gpa": 3.7, "attendance": 95, "score": 92, "status": " Active "},
-    {"student_id": "S002", "gpa": 2.9, "attendance": 82, "score": 76, "status": "ACTIVE"},
-    {"student_id": "S003", "gpa": 4.2, "attendance": 91, "score": 88, "status": "active"},
+    {"student_id": "S001", "gpa": 3.7, "attendance": 95, "score": 92, "status": "active"},
+    {"student_id": "S002", "gpa": 2.9, "attendance": 82, "score": 76, "status": "active"},
+    {"student_id": "S003", "gpa": 3.8, "attendance": 91, "score": 88, "status": "active"},
     {"student_id": "S004", "gpa": 3.1, "attendance": 68, "score": 61, "status": "inactive"},
-    {"student_id": "S004", "gpa": 3.1, "attendance": 68, "score": 61, "status": "inactive"},
+    {"student_id": "S005", "gpa": 3.4, "attendance": 87, "score": 79, "status": "active"},
 ]
 
 WEB_DATA = [
