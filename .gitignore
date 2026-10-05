@@ -7,3 +7,5 @@ logs/*.log
 data/processed/*.csv
 data/rejected/*.csv
 database/*.db
+# Generated exports
+data/exports/
