@@ -66,7 +66,7 @@ def validate_source_record(row, source):
         required = ["student_id", "student_name", "age", "major", "city"]
     elif source == "API":
         required = ["student_id", "gpa", "attendance", "score"]
-    elif source in {"SQLite", "MongoDB"}:
+    elif source in {"SQLite", "MongoDB", "PostgreSQL"}:
       required = ["student_id", "course_code", "course_name"]
     else:
      raise ValueError(f"Unsupported source: {source}")
