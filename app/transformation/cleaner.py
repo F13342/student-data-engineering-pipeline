@@ -25,3 +25,11 @@ def clean_api_row(row):
     if cleaned.get("status") is not None:
         cleaned["status"] = clean_text(cleaned["status"]).lower()
     return cleaned
+
+def clean_mongodb_row(row):
+    cleaned = dict(row)
+
+    for key in ("student_id", "course_code", "course_name"):
+        cleaned[key] = clean_text(cleaned.get(key))
+
+    return cleaned
