@@ -1,1 +1,2 @@
-# No external dependencies. Python standard library only.
+# Project dependencies
+pymongo==4.18.2
